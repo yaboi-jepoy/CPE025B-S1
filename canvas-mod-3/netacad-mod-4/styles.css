@@ -1,0 +1,48 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+#title {
+    font-weight: 700;
+}
+
+#subtitle {
+    font-size: .67em;
+}
+
+.box {
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    height: 10em;
+    min-width: 10em;
+    width: 90%;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#full-sized {
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.text {
+    margin: 0px 4px 0px 4px;
+    padding: 4px;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
