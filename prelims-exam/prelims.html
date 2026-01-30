@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tnznt Guitars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1 id="title">tnznt Guitars</h1>
+                <p class="subtitle">tanzanite guitars, you want 'em, we have 'em.</p>
+            </header>
+        <form action="" id="survey-form">
+            <!-- <h2>Vote for your guitar!</h2> -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <label for="name-label">Name:</label>
+                <input type="text" placeholder="Blaster Silonga" id="name"> <br>
+                <label for="email-label">Email:</label>
+                <input type="email" id="email" placeholder="burgerNaBasa@gmail.com" required> <br>
+                <label for="contact-label">Contact:</label>
+                <input type="tel" placeholder="09123456789" id="tel">
+            </div>
+
+            <div class="pick">
+                <h3>Pick your Poison!</h3>
+                <p id="not-literally">not literally 'tho...</p>
+                <label for="guitar-label">Guitar:</label>
+                <select name="guitar-select" id="guitar_dropdown">
+                    <option value="">Select</option>
+                    <option value="stratocaster">Stratocaster</option>
+                    <option value="telecaster">Telecaster</option>
+                    <option value="jazzmaster">Jassmaster</option>
+                    <option value="les-paul">Les Paul</option>
+                    <option value="hollow-body">Hollow Body</option>
+                    <option value="mustang">Mustang</option>
+                </select>
+                <p id="note">to lock your vote, you must order some strings...</p>
+                <label for="string-gauge">String Gauge:</label>
+                <input type="number" name="string-gauge" id="string-gauge" min="8" max="13"> <br>
+                <label for="string-quantity">Quantity:</label>
+                <input type="number" name="string-quantity" id="string-quantity" min="1" max="4" ><br>
+                <label for="string-brand">
+                    Brand: <br>
+                    <label for="daddario">
+                        <input type="radio" name="string-brand"> 
+                        D'Addario
+                    </label> <br>
+                    <label for="Elixir">
+                        <input type="radio" name="string-brand"> 
+                        Elixir
+                    </label> <br>
+                    <label for="daddario">
+                        <input type="radio" name="string-brand"> 
+                        Ernie Ball
+                    </label> <br> 
+                </label>
+            </div>
+
+            <div class="giveaway">
+                <h3>are you excited for the giveaway?</h3>
+                <label for="yes">
+                    <input type="checkbox" value="yes"> Yes
+                </label> <br>
+                <label for="yes-blue" id="yes-in-pink" >
+                    <input type="checkbox" value="yes"> Yes, but in Pink
+                </label> <br>
+                <label for="no">
+                    <input type="checkbox" value="no"> Uhmmm, no.
+                </label>
+            </div>
+
+            <div class="suggestion">
+                <p id="suggestions">we're looking for suggestions</p>
+                <textarea name="suggestion-area" id="suggestion"></textarea>
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    </main>
+</body>
+</html>
