@@ -1,0 +1,90 @@
+header {
+    animation: fadeIn 2s ease-in;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+.project-card {
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    transition: all .15s ease-in-out;
+}
+
+/* I just used the div of project-card as a replacement for the button */
+.project-card:hover {
+    box-shadow: pink;
+    transform: scale(1.1);
+    cursor: pointer; /* for the illusion of the div as a button */
+}
+
+#product-image {
+    max-width: 8em;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+@keyframes staggered {
+    from {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#bubbles {
+    max-width: 14em;
+    animation: staggered .4s ease-in-out .2s backwards;
+}
+
+#blossom {
+    max-width: 10em;
+    animation: staggered .4s ease-in-out backwards;
+}
+
+#buttercup {
+    max-width: 11em;
+    margin-top: 1.4em;
+    animation: staggered .4s ease-in-out .4s backwards;
+}
+
+footer {
+    text-align: center;
+}
