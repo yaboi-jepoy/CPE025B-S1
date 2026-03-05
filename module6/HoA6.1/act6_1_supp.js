@@ -51,14 +51,20 @@ function mainMenu() {
     showContacts(3, contacts);
   } else if (response.toLowerCase() == "quit") {
     return;
+  } else if (response == null) {
+    mainMenu();
   }
 }
 
 function showContacts(mode, inputArray) {
   /// modes 1 = index search, 2 = show all, 3 = search name
   let max = inputArray.length - 1;
+
   if (mode == 1) {
     let index = prompt("Enter index of contact:");
+    if (index == null) {
+      mainMenu();
+    }
     if (index > max) {
       alert(`Please enter 0-${inputArray.length - 1} only.`);
     } else {
@@ -76,13 +82,16 @@ function showContacts(mode, inputArray) {
     mainMenu();
   } else if (mode == 3) {
     let searchName = prompt("Enter name to search: ");
+    if (searchName == null) {
+      mainMenu();
+    }
     for (let i = 0; i < inputArray.length; i++) {
       if (inputArray[i].name.toLowerCase().includes(searchName.toLowerCase())) {
         alert(
           `${inputArray[i].name} / ${inputArray[i].phone} / ${inputArray[i].email}`,
         );
       } else {
-        alert("Name not found.");
+        alert("Contact not found.");
         break;
       }
     }
