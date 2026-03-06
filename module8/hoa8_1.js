@@ -14,13 +14,13 @@ class FleetManager {
     this.vehicles.push(vehicle);
   }
   deployVehicle(id) {
-    //? HOW DO I ADD UNDEFINED HEERE?
     for (let vehicle in this.vehicles) {
-      if (this.vehicles[vehicle].id == id) {
+      if (this.vehicles[vehicle].id === id) {
         this.vehicles[vehicle].isDeployed = true;
-        // console.log(`${this.vehicles[vehicle].id}`);
+        return;
       }
     }
+    return undefined;
   }
   getAvailableVehicles() {
     this.availableVehicles = [];
