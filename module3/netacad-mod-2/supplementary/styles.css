@@ -1,0 +1,67 @@
+/* 
+beige - b6a277
+black - 13110c
+blue - 
+*/
+
+body {
+  background-color: #f0f0f0; /* Light gray using HEX value */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: white; /* Green using RGB value */
+}
+
+h2 {
+  color: hsl(210, 100%, 50%); /* Blue using HSL value */
+  font-style: italic;
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(to top, #b6a277, #13110c);
+}
+
+main {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Alysa_LIUAsatur_Yesayants_-_YantsImages_8309_%28cropped%29.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  padding: 0.4em;
+}
+
+p {
+  font-size: 18px;
+  background-color: rgba(240, 248, 255, 0.5);
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  line-height: 1.6;
+  padding-left: 10px;
+}
+
+a:link {
+  color: darkblue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+}
