@@ -44,11 +44,12 @@ main {
 
 .product-image .badge {
   position: absolute;
-  top: 50%;
-  right: 65px;
+  top: 10%;
+  right: 0%;
   background-color: #4caf50;
   color: #fff;
   padding: 4px 8px;
+  border-radius: 0.4em;
 }
 
 .contact-form {
@@ -124,4 +125,24 @@ footer {
   font-weight: bold;
   border-bottom: 1px solid #000;
   padding-bottom: 4px;
+}
+
+#strat {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/KuhiUokSPyKC25wo7vPUsE-2000-80.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#tele {
+  background-image: url("https://nafiriguitar.com/cdn/shop/files/IMG-7452.jpg?v=1735042728&width=1946");
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.guitar-type,
+.guitar-description {
+  background-color: rgba(245, 245, 245, 0.65);
+  padding: 0.2em;
+  border-radius: 0.2em;
 }
