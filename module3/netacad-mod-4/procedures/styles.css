@@ -1,0 +1,36 @@
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: auto auto;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+  background-color: #e2e2e2;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.post img {
+  float: left;
+  width: 50%;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+    float: none;
+  }
+}

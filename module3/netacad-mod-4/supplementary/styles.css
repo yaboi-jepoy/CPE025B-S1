@@ -1,0 +1,66 @@
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: auto auto;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+  background-color: #e2e2e2;
+}
+
+#strat {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/KuhiUokSPyKC25wo7vPUsE-2000-80.jpg");
+  background-repeat: no-repeat;
+  background-position: 35% 50%;
+  background-size: cover;
+  height: 25vw;
+}
+#tele {
+  background-image: url("https://nafiriguitar.com/cdn/shop/files/IMG-7452.jpg?v=1735042728&width=1946");
+  background-repeat: no-repeat;
+  background-position: 35% 70%;
+  background-size: cover;
+  height: 25vw;
+}
+#les-paul {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/cEzX9TnU6yoRN6sBm7FETX.jpg");
+  background-repeat: no-repeat;
+  background-position: 30% 80%;
+  background-size: cover;
+  height: 25vw;
+}
+
+.column p,
+.column h2 {
+  background-color: rgba(245, 245, 245, 0.6);
+  padding: 0.2em;
+  border-radius: 0.2em;
+  margin: 0.2em;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.post img {
+  float: left;
+  width: 50%;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+    float: none;
+  }
+}
